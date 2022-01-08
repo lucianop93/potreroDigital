@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Varela Round', sans-serif;
+}
+
+.navbar.navbar-light {
+    background-color: #50371b !important;
+}
+
+.img-navvar {
+    width: 50%;
+}
+
+
+
+.nav-item {
+    color: antiquewhite !important;
+}
+
+.Productos {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.producto {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.producto h2{
+    padding-top: 10px;;
+    color: #db5931;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.img-producto {
+    width: 100%;
+    min-width: 170px;
+    max-width: 250px;
+    height: 100%;
+    min-width: 170px;
+    max-height: 250px;
+    border-style: groove;
+}
+
+.contenedorImgproductos {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    width: 100%;
+    height: 120px;
+    background-color: #48b7eb;
+    line-height: 2px;
+}
+
+.contenedorFooter {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    color: rgb(248, 237, 237);
+    margin-bottom: 5%;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(248, 237, 237);
+}
+
+@media (min-width: 992px) {
+
+
+    .img-navvar {
+        width: 20%;
+    }
+
+    .contenedorImgMain {
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-producto {
+        width: 100%;
+        max-width: 660px;
+        max-height: 660px;
+    }
+
+    button.btn.btn-info {
+        width: fit-content;
+    }
+
+    .producto {
+        display: flex;
+        justify-content: center;
+    }
+
+    .producto a {
+        text-decoration: none;
+        color: #ffff;
+    }
+
+    .contenedorImgproductos {
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+}
